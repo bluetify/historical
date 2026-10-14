@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Affair of the Poisons</title>
+    <!-- Tailwind CSS untuk styling modern dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Inter dan Playfair Display untuk sentuhan estetik -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f0eb; /* Warna latar krem muda sesuai gambar */
+            color: #4a4a4a;
+        }
+        .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Style untuk teks sambung bergaya tulisan tangan */
+        .handwriting {
+            font-family: 'Playfair Display', cursive;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between py-10 px-4 sm:px-8">
+
+    <!-- Container Utama -->
+    <main class="max-w-4xl mx-auto w-full space-y-8 my-auto">
+
+        <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-1.5 py-1 rounded">Historical Nonfiction Book</span>
+        <h2 class="font-serif-custom text-4xl text-center font-bold text-neutral-800 tracking-tight">The Affair of the Poisons</h2>
+
+        <!-- KARTU 1: -->
+        <div class="bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col md:flex-row border border-[#e8e2d8]">
+            <!-- Sisi Kiri: Kotak Hijau Sage dengan Gambar & Nomor -->
+            <div class="bg-[#8b9584] text-white p-6 sm:p-8 md:w-1/2 flex flex-col justify-between relative">
+                <!-- Header kecil di dalam kotak -->
+                <div class="flex items-center justify-between text-xs tracking-wider opacity-80 mb-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-8 h-[1px] bg-black/70"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-black/70"></span>
+                    </div>
+                    <!-- <span>pict by @wahyuni.60</span> -->
+                </div>
+                <!-- Gambar Alam Berkabut -->
+                <div class="my-2 rounded-lg overflow-hidden shadow-inner relative group">
+                    <img src="{{ asset('dist/images/historical/1.png') }}" 
+                         alt="Nature Foggy"
+                         class="w-full h-48 sm:h-52 object-cover filter brightness-90">
+                    <!-- Teks tulisan tangan di atas gambar -->
+                    <div class="absolute bottom-3 left-3">
+                        <!-- <p class="handwriting text-white text-lg drop-shadow">Surely</p> -->
+                    </div>
+                    <p class="handwriting text-black text-l font-semibold drop-shadow">Catherine Deshayes, dikenal sebagai La Voisin</p>
+                </div>
+                <!-- Nomor Urut -->
+                <div class="flex justify-end mt-2">
+                    <span class="font-semibold text-lg tracking-widest text-black/90">01</span>
+                </div>
+            </div>
+
+            <!-- Sisi Kanan: Judul & Deskripsi -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-white">
+                <div class="space-y-3">
+                    <!-- <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-2.5 py-1 rounded"></span> -->
+                    <h2 class="font-serif-custom text-3xl font-bold text-neutral-800 tracking-tight">La Voisin: perempuan yang mengetahui rahasia Paris</h2>
+                    <p class="text-sm leading-relaxed text-neutral-600 font-light" style="text-align: justify;">
+                        Jika skandal ini memiliki satu tokoh yang paling identik dengan sisi gelap Paris, tokoh itu adalah Catherine Deshayes, atau La Voisin.
+                        Ia bukan putri kerajaan. Ia berasal dari lingkungan masyarakat biasa dan dikenal menjalankan praktik ramalan serta layanan yang berkaitan dengan pengobatan tradisional. Seiring waktu, namanya dikaitkan dengan jaringan yang jauh lebih gelap.
+                    </p>
+                    <div class="pt-4">
+                        <!-- <div class="w-24 h-[1px] bg-neutral-300"></div> -->
+                        <a href="{{ url('poison1') }}" class="font-bold text-neutral/90">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KARTU 2: -->
+        <div class="bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col md:flex-row-reverse border border-[#e8e2d8]">
+            <!-- Sisi Kanan (di kode jadi kiri karena row-reverse): Kotak Abu-abu Hangat dengan Gambar & Nomor -->
+            <div class="bg-[#d2c9bc] text-neutral-800 p-6 sm:p-8 md:w-1/2 flex flex-col justify-between relative">
+                <!-- Header kecil -->
+                <div class="flex items-center justify-between text-xs tracking-wider opacity-80 mb-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-8 h-[1px] bg-neutral-700/70"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-700/70"></span>
+                    </div>
+                    <!-- <span>pict by @dailyalya</span> -->
+                </div>
+                <!-- Gambar Minimalis -->
+                <div class="my-2 rounded-lg overflow-hidden shadow-inner relative">
+                    <img src="{{ asset('dist/images/historical/2.jpg') }}" 
+                         alt="Minimalist Concept"
+                         class="w-full h-48 sm:h-52 object-cover">
+                    <p class="handwriting text-neutral text-l font-semibold drop-shadow">Pengkhianatan di balik pintu istana</p>
+                    <!-- Teks tulisan tangan di atas gambar -->
+                    <div class="absolute bottom-2 right-3 text-right">
+                        <!-- <p class="handwriting text-neutral-800 text-lg">Minimalist</p> -->
+                        <!-- <p class="handwriting text-neutral-900 text-sm font-medium">Pengkhianatan di balik pintu istana</p> -->
+                    </div>
+                </div>
+                <!-- Nomor Urut di kiri bawah -->
+                <div class="flex justify-start mt-2">
+                    <span class="font-semibold text-lg tracking-widest text-neutral-800/90">02</span>
+                </div>
+            </div>
+
+            <!-- Sisi Kiri (di kode jadi kanan): Judul & Deskripsi -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-white">
+                <div class="space-y-3">
+                    <!-- <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-2.5 py-1 rounded">Minimalis</span> -->
+                    <h2 class="font-serif-custom text-3xl font-bold text-neutral-800 tracking-tight">Pengkhianatan di balik pintu istana.</h2>
+                    <p class="text-sm leading-relaxed text-neutral-600 font-light">
+                        Pada masa Louis XIV, kehidupan istana Versailles adalah panggung tempat orang-orang bersaing mendapatkan kedudukan.
+                        Raja memiliki kekuasaan yang luar biasa. Perhatian darinya dapat meningkatkan pengaruh seseorang, sedangkan hilangnya kepercayaan raja dapat menghancurkan karier seorang bangsawan.
+                        Karena itu, ketakutan dan kecemburuan bukanlah sekadar persoalan pribadi. Keduanya dapat berubah menjadi persoalan politik.
+                    </p>
+                    <div class="pt-4">
+                        <!-- <div class="w-24 h-[1px] bg-neutral-300"></div> -->
+                        <a href="{{ url('poison2') }}" class="font-bold text-neutral/90">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KARTU 3: -->
+        <div class="bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col md:flex-row border border-[#e8e2d8]">
+            <!-- Sisi Kiri: Kotak Abu-abu Kebiruan dengan Gambar & Nomor -->
+            <div class="bg-[#93989e] text-white p-6 sm:p-8 md:w-1/2 flex flex-col justify-between relative">
+                <!-- Header kecil -->
+                <div class="flex items-center justify-between text-xs tracking-wider opacity-80 mb-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-8 h-[1px] bg-white/70"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-white/70"></span>
+                    </div>
+                    <!-- <span>pict by @sky.archive</span> -->
+                </div>
+                <!-- Gambar Awan / Langit -->
+                <div class="my-2 rounded-lg overflow-hidden shadow-inner relative">
+                    <img src="{{ asset('dist/images/historical/3.jpg') }}" 
+                         alt="Sky Series"
+                         class="w-full h-48 sm:h-52 object-cover">
+                    <p class="handwriting text-neutral text-l font-semibold drop-shadow">Nicolas de La Reynie: polisi yang memasuki dunia rahasia</p>
+                    <!-- Teks tulisan tangan di atas gambar -->
+                    <div class="absolute bottom-3 right-4 text-right">
+                        <!-- <p class="handwriting text-white text-lg drop-shadow">Play with</p>
+                        <p class="handwriting text-white text-xl font-semibold drop-shadow">sky.</p> -->
+                    </div>
+                </div>
+                <!-- Nomor Urut -->
+                <div class="flex justify-end mt-2">
+                    <span class="font-semibold text-lg tracking-widest text-white/90">03</span>
+                </div>
+            </div>
+
+            <!-- Sisi Kanan: Judul & Deskripsi -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-white">
+                <div class="space-y-3">
+                    <!-- <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-2.5 py-1 rounded">Sky series</span> -->
+                    <h2 class="font-serif-custom text-3xl font-bold text-neutral-800 tracking-tight">Nicolas de La Reynie: polisi yang memasuki dunia rahasia</h2>
+                    <p class="text-sm leading-relaxed text-neutral-600 font-light">
+                        Louis XIV mempercayakan penyelidikan kepada Nicolas de La Reynie, pejabat tinggi kepolisian Paris.
+                        Ia menghadapi tugas yang sangat sulit. Ia harus mencari bukti kejahatan, memeriksa saksi, menilai dokumen, dan menyelidiki orang-orang yang mungkin memiliki hubungan dengan istana.
+                        Pada tahap ini, sejumlah perempuan yang dituduh terlibat dalam jaringan racun mulai diperiksa. Di antaranya adalah Marie Bosse, yang kesaksiannya membantu mengarahkan penyidik kepada La Voisin. La Voisin ditangkap pada 12 Maret 1679 bersama beberapa orang yang dikaitkan dengan jaringannya.
+                    </p>
+                    <div class="pt-4">
+                        <!-- <div class="w-24 h-[1px] bg-neutral-300"></div> -->
+                        <a href="{{ url('poison3') }}" class="font-bold text-neutral/90">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KARTU 4: -->
+        <div class="bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col md:flex-row border border-[#e8e2d8]">
+            <!-- Sisi Kiri: Kotak Hijau Sage dengan Gambar & Nomor -->
+            <div class="bg-[#8b9584] text-white p-6 sm:p-8 md:w-1/2 flex flex-col justify-between relative">
+                <!-- Header kecil di dalam kotak -->
+                <div class="flex items-center justify-between text-xs tracking-wider opacity-80 mb-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-8 h-[1px] bg-black/70"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-black/70"></span>
+                    </div>
+                    <!-- <span>pict by @wahyuni.60</span> -->
+                </div>
+                <!-- Gambar Alam Berkabut -->
+                <div class="my-2 rounded-lg overflow-hidden shadow-inner relative group">
+                    <img src="{{ asset('dist/images/historical/4.jpg') }}" 
+                         alt="Nature Foggy"
+                         class="w-full h-48 sm:h-52 object-cover filter brightness-90">
+                    <!-- Teks tulisan tangan di atas gambar -->
+                    <div class="absolute bottom-3 left-3">
+                        <!-- <p class="handwriting text-white text-lg drop-shadow">Surely</p> -->
+                    </div>
+                    <p class="handwriting text-black text-l font-semibold drop-shadow">Ritual rahasia, ramalan, dan tuduhan black mass</p>
+                </div>
+                <!-- Nomor Urut -->
+                <div class="flex justify-end mt-2">
+                    <span class="font-semibold text-lg tracking-widest text-black/90">04</span>
+                </div>
+            </div>
+
+            <!-- Sisi Kanan: Judul & Deskripsi -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-white">
+                <div class="space-y-3">
+                    <!-- <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-2.5 py-1 rounded"></span> -->
+                    <h2 class="font-serif-custom text-3xl font-bold text-neutral-800 tracking-tight">Ritual rahasia, ramalan, dan tuduhan black mass</h2>
+                    <p class="text-sm leading-relaxed text-neutral-600 font-light" style="text-align: justify;">
+                        Di antara kesaksian yang muncul dalam penyelidikan, terdapat cerita tentang ritual yang disebut black mass, ramalan, dan upacara yang dianggap melanggar ajaran agama.
+                        Dalam Eropa abad ke-17, tuduhan semacam ini memiliki daya hancur yang luar biasa. Seseorang yang dituduh melakukan sihir bukan hanya berisiko kehilangan reputasi, tetapi juga menghadapi hukuman berat.
+                        La Voisin dan sejumlah orang yang dikaitkan dengannya dituduh terlibat dalam praktik yang melampaui ramalan biasa. Kesaksian mereka memuat cerita tentang upacara rahasia, dugaan pengorbanan manusia, serta upaya memperoleh kekayaan atau pengaruh melalui praktik terlarang.
+                    </p>
+                    <div class="pt-4">
+                        <!-- <div class="w-24 h-[1px] bg-neutral-300"></div> -->
+                        <a href="{{ url('poison4') }}" class="font-bold text-neutral/90">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KARTU 5: -->
+        <div class="bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col md:flex-row-reverse border border-[#e8e2d8]">
+            <!-- Sisi Kanan (di kode jadi kiri karena row-reverse): Kotak Abu-abu Hangat dengan Gambar & Nomor -->
+            <div class="bg-[#d2c9bc] text-neutral-800 p-6 sm:p-8 md:w-1/2 flex flex-col justify-between relative">
+                <!-- Header kecil -->
+                <div class="flex items-center justify-between text-xs tracking-wider opacity-80 mb-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-8 h-[1px] bg-neutral-700/70"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-700/70"></span>
+                    </div>
+                    <!-- <span>pict by @dailyalya</span> -->
+                </div>
+                <!-- Gambar Minimalis -->
+                <div class="my-2 rounded-lg overflow-hidden shadow-inner relative">
+                    <img src="{{ asset('dist/images/historical/5.jpg') }}" 
+                         alt="Minimalist Concept"
+                         class="w-full h-48 sm:h-52 object-cover">
+                    <p class="handwriting text-neutral text-l font-semibold drop-shadow">Madame de Montespan</p>
+                    <!-- Teks tulisan tangan di atas gambar -->
+                    <div class="absolute bottom-2 right-3 text-right">
+                        <!-- <p class="handwriting text-neutral-800 text-lg">Minimalist</p> -->
+                        <!-- <p class="handwriting text-neutral-900 text-sm font-medium">Pengkhianatan di balik pintu istana</p> -->
+                    </div>
+                </div>
+                <!-- Nomor Urut di kiri bawah -->
+                <div class="flex justify-start mt-2">
+                    <span class="font-semibold text-lg tracking-widest text-neutral-800/90">05</span>
+                </div>
+            </div>
+
+            <!-- Sisi Kiri (di kode jadi kanan): Judul & Deskripsi -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-white">
+                <div class="space-y-3">
+                    <!-- <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-2.5 py-1 rounded">Minimalis</span> -->
+                    <h2 class="font-serif-custom text-3xl font-bold text-neutral-800 tracking-tight">Madame de Montespan: nama yang paling berbahaya untuk disebut.</h2>
+                    <p class="text-sm leading-relaxed text-neutral-600 font-light">
+                        Françoise-Athénaïs de Rochechouart de Mortemart, yang dikenal sebagai Madame de Montespan, adalah salah satu perempuan paling berpengaruh dalam kehidupan pribadi Louis XIV. Ia merupakan kekasih raja dan ibu dari beberapa anak mereka.
+                        Montespan bukan perempuan biasa yang kebetulan berada di dekat pusat kekuasaan. Hubungannya dengan raja memberinya posisi penting di lingkungan istana.
+                    </p>
+                    <div class="pt-4">
+                        <!-- <div class="w-24 h-[1px] bg-neutral-300"></div> -->
+                        <a href="{{ url('poison5') }}" class="font-bold text-neutral/90">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KARTU 6: -->
+        <div class="bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col md:flex-row border border-[#e8e2d8]">
+            <!-- Sisi Kiri: Kotak Abu-abu Kebiruan dengan Gambar & Nomor -->
+            <div class="bg-[#93989e] text-white p-6 sm:p-8 md:w-1/2 flex flex-col justify-between relative">
+                <!-- Header kecil -->
+                <div class="flex items-center justify-between text-xs tracking-wider opacity-80 mb-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-8 h-[1px] bg-white/70"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-white/70"></span>
+                    </div>
+                    <!-- <span>pict by @sky.archive</span> -->
+                </div>
+                <!-- Gambar Awan / Langit -->
+                <div class="my-2 rounded-lg overflow-hidden shadow-inner relative">
+                    <img src="{{ asset('dist/images/historical/6.jpg') }}" 
+                         alt="Sky Series"
+                         class="w-full h-48 sm:h-52 object-cover">
+                    <p class="handwriting text-neutral text-l font-semibold drop-shadow">Kematian La Voisin</p>
+                    <!-- Teks tulisan tangan di atas gambar -->
+                    <div class="absolute bottom-3 right-4 text-right">
+                        <!-- <p class="handwriting text-white text-lg drop-shadow">Play with</p>
+                        <p class="handwriting text-white text-xl font-semibold drop-shadow">sky.</p> -->
+                    </div>
+                </div>
+                <!-- Nomor Urut -->
+                <div class="flex justify-end mt-2">
+                    <span class="font-semibold text-lg tracking-widest text-white/90">06</span>
+                </div>
+            </div>
+
+            <!-- Sisi Kanan: Judul & Deskripsi -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-white">
+                <div class="space-y-3">
+                    <!-- <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-2.5 py-1 rounded">Sky series</span> -->
+                    <h2 class="font-serif-custom text-3xl font-bold text-neutral-800 tracking-tight">Kematian La Voisin: akhir yang tidak mengakhiri misteri</h2>
+                    <p class="text-sm leading-relaxed text-neutral-600 font-light">
+                        Pada 22 Februari 1680, La Voisin dieksekusi dengan dibakar di Place de Grève, Paris, berdasarkan putusan atas perkara yang melibatkannya.
+                        Bagi banyak orang, kematiannya mungkin tampak seperti akhir yang wajar: seorang perempuan yang dituduh terlibat dalam jaringan racun dan praktik terlarang akhirnya menerima hukuman.
+                        Tetapi kematiannya tidak mengakhiri semua pertanyaan.
+                    </p>
+                    <div class="pt-4">
+                        <!-- <div class="w-24 h-[1px] bg-neutral-300"></div> -->
+                        <a href="{{ url('poison6') }}" class="font-bold text-neutral/90">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KARTU 7: -->
+        <div class="bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col md:flex-row-reverse border border-[#e8e2d8]">
+            <!-- Sisi Kanan (di kode jadi kiri karena row-reverse): Kotak Abu-abu Hangat dengan Gambar & Nomor -->
+            <div class="bg-[#d2c9bc] text-neutral-800 p-6 sm:p-8 md:w-1/2 flex flex-col justify-between relative">
+                <!-- Header kecil -->
+                <div class="flex items-center justify-between text-xs tracking-wider opacity-80 mb-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-8 h-[1px] bg-neutral-700/70"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-700/70"></span>
+                    </div>
+                    <!-- <span>pict by @dailyalya</span> -->
+                </div>
+                <!-- Gambar Minimalis -->
+                <div class="my-2 rounded-lg overflow-hidden shadow-inner relative">
+                    <img src="{{ asset('dist/images/historical/7.jpg') }}" 
+                         alt="Minimalist Concept"
+                         class="w-full h-48 sm:h-52 object-cover">
+                    <p class="handwriting text-neutral text-l font-semibold drop-shadow">Ministère de la justice</p>
+                    <!-- Teks tulisan tangan di atas gambar -->
+                    <div class="absolute bottom-2 right-3 text-right">
+                        <!-- <p class="handwriting text-neutral-800 text-lg">Minimalist</p> -->
+                        <!-- <p class="handwriting text-neutral-900 text-sm font-medium">Pengkhianatan di balik pintu istana</p> -->
+                    </div>
+                </div>
+                <!-- Nomor Urut di kiri bawah -->
+                <div class="flex justify-start mt-2">
+                    <span class="font-semibold text-lg tracking-widest text-neutral-800/90">07</span>
+                </div>
+            </div>
+
+            <!-- Sisi Kiri (di kode jadi kanan): Judul & Deskripsi -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-white">
+                <div class="space-y-3">
+                    <!-- <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-2.5 py-1 rounded">Minimalis</span> -->
+                    <h2 class="font-serif-custom text-3xl font-bold text-neutral-800 tracking-tight">Ketika pengadilan mulai mengancam istana sendiri</h2>
+                    <p class="text-sm leading-relaxed text-neutral-600 font-light">
+                        Pengadilan Chambre ardente memeriksa ratusan orang selama penyelidikan yang berlangsung dari 1679 hingga 1682. Menurut catatan Kementerian Kehakiman Prancis, 442 orang diperiksa sebagai terdakwa, 367 surat perintah penangkapan dikeluarkan, dan 218 penangkapan dipertahankan. Angka-angka ini menggambarkan betapa luasnya penyelidikan tersebut.
+                        Ministère de la justice.
+                    </p>
+                    <div class="pt-4">
+                        <!-- <div class="w-24 h-[1px] bg-neutral-300"></div> -->
+                        <a href="{{ url('poison7') }}" class="font-bold text-neutral/90">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- KARTU 8: -->
+        <div class="bg-white rounded-3xl shadow-sm overflow-hidden flex flex-col md:flex-row border border-[#e8e2d8]">
+            <!-- Sisi Kiri: Kotak Abu-abu Kebiruan dengan Gambar & Nomor -->
+            <div class="bg-[#93989e] text-white p-6 sm:p-8 md:w-1/2 flex flex-col justify-between relative">
+                <!-- Header kecil -->
+                <div class="flex items-center justify-between text-xs tracking-wider opacity-80 mb-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-8 h-[1px] bg-white/70"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-white/70"></span>
+                    </div>
+                    <!-- <span>pict by @sky.archive</span> -->
+                </div>
+                <!-- Gambar Awan / Langit -->
+                <div class="my-2 rounded-lg overflow-hidden shadow-inner relative">
+                    <img src="{{ asset('dist/images/historical/8.jpg') }}" 
+                         alt="Sky Series"
+                         class="w-full h-48 sm:h-52 object-cover">
+                    <p class="handwriting text-neutral text-l font-semibold drop-shadow">Louis XIV</p>
+                    <!-- Teks tulisan tangan di atas gambar -->
+                    <div class="absolute bottom-3 right-4 text-right">
+                        <!-- <p class="handwriting text-white text-lg drop-shadow">Play with</p>
+                        <p class="handwriting text-white text-xl font-semibold drop-shadow">sky.</p> -->
+                    </div>
+                </div>
+                <!-- Nomor Urut -->
+                <div class="flex justify-end mt-2">
+                    <span class="font-semibold text-lg tracking-widest text-white/90">08</span>
+                </div>
+            </div>
+
+            <!-- Sisi Kanan: Judul & Deskripsi -->
+            <div class="p-6 sm:p-8 md:w-1/2 flex flex-col justify-center bg-white">
+                <div class="space-y-3">
+                    <!-- <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-2.5 py-1 rounded">Sky series</span> -->
+                    <h2 class="font-serif-custom text-3xl font-bold text-neutral-800 tracking-tight">Tahun 1709: rahasia yang dibakar oleh Raja Matahari</h2>
+                    <p class="text-sm leading-relaxed text-neutral-600 font-light">
+                        Lebih dari dua puluh tahun setelah penyelidikan besar itu dimulai, Louis XIV masih menyimpan dokumen-dokumen sensitif yang berkaitan dengan perkara tersebut.
+                        Pada 1709, ia membakar sendiri berkas-berkas tuduhan yang disimpannya dalam sebuah kotak tertutup. Tindakan itu menjadi salah satu bagian paling menarik dari sejarah Affair of the Poisons.
+                    </p>
+                    <div class="pt-4">
+                        <!-- <div class="w-24 h-[1px] bg-neutral-300"></div> -->
+                        <a href="{{ url('poison8') }}" class="font-bold text-neutral/90">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer / Bagian Bawah -->
+    <footer class="mt-12 text-center pb-4">
+        <p class="text-sm tracking-wide text-neutral-600 flex items-center justify-center space-x-2">
+            <span>Archive by</span> 
+            <span class="handwriting text-xl font-bold text-blue-800 ml-1">bluetify</span>
+        </p>
+    </footer>
+
+</body>
+</html>

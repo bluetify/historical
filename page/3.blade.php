@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Affair of the Poisons</title>
+    <!-- Tailwind CSS untuk styling modern dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Inter dan Playfair Display untuk sentuhan estetik -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f0eb; /* Warna latar krem muda sesuai gambar */
+            color: #4a4a4a;
+        }
+        .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Style untuk teks sambung bergaya tulisan tangan */
+        .handwriting {
+            font-family: 'Playfair Display', cursive;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between py-10 px-4 sm:px-8">
+
+    <!-- Container Utama -->
+    <main class="max-w-4xl mx-auto w-full space-y-8 my-auto">
+        
+        <div class="p-3 sm:p-8 flex flex-col justify-center bg-neutral">
+            <div class="space-y-3">
+                <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-1.5 py-1 rounded">03</span>
+                <h2 class="font-serif-custom text-2xl text-center font-bold text-neutral-600 tracking-tight">Nicolas de La Reynie: polisi yang memasuki dunia rahasia</h2>
+
+                <img src="{{ asset('dist/images/historical/3.jpg') }}" alt="Sky Series" class="w-full h-72 sm:h-52 object-cover">
+
+                <p class="text-sm leading-relaxed text-neutral-600 py-3" style="text-align: justify;">
+                    Louis XIV mempercayakan penyelidikan kepada Nicolas de La Reynie, pejabat tinggi kepolisian Paris.
+                    Ia menghadapi tugas yang sangat sulit. Ia harus mencari bukti kejahatan, memeriksa saksi, menilai dokumen, dan menyelidiki orang-orang yang mungkin memiliki hubungan dengan istana.
+                    Pada tahap ini, sejumlah perempuan yang dituduh terlibat dalam jaringan racun mulai diperiksa. Di antaranya adalah Marie Bosse, yang kesaksiannya membantu mengarahkan penyidik kepada La Voisin. La Voisin ditangkap pada 12 Maret 1679 bersama beberapa orang yang dikaitkan dengan jaringannya.
+                    Namun, ada masalah besar dalam penyelidikan tersebut.
+                    Dalam perkara yang melibatkan dugaan sihir dan ritual terlarang, para tersangka memberikan kesaksian yang tidak semuanya dapat diverifikasi. Sebagian pengakuan berisi klaim sensasional tentang upacara rahasia, kekuatan gaib, dan kejahatan mengerikan.
+                    La Reynie menganggap banyak pengakuan itu serius. Tetapi dari sudut pandang sejarah modern, kesaksian semacam itu harus diperiksa dengan hati-hati: pengakuan yang muncul dalam suasana penuh tekanan tidak otomatis membuktikan bahwa setiap peristiwa yang diceritakan benar-benar terjadi.
+                    Di sinilah kisah ini berubah menjadi sesuatu yang lebih gelap.
+                    Bukan hanya karena ada dugaan kejahatan, tetapi juga karena rasa takut masyarakat terhadap sihir dapat memengaruhi cara orang dituduh, diinterogasi, dan dihukum.
+                </p>
+            </div>
+        </div>
+        
+
+    </main>
+
+    <!-- Footer / Bagian Bawah -->
+    <footer class="mt-12 text-center pb-4">
+        <p class="text-sm tracking-wide text-neutral-600 flex items-center justify-center space-x-2">
+            <span>Archive by</span> 
+            <span class="handwriting text-xl font-bold text-blue-800 ml-1">bluetify</span>
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Affair of the Poisons</title>
+    <!-- Tailwind CSS untuk styling modern dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Inter dan Playfair Display untuk sentuhan estetik -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f0eb; /* Warna latar krem muda sesuai gambar */
+            color: #4a4a4a;
+        }
+        .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Style untuk teks sambung bergaya tulisan tangan */
+        .handwriting {
+            font-family: 'Playfair Display', cursive;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between py-10 px-4 sm:px-8">
+
+    <!-- Container Utama -->
+    <main class="max-w-4xl mx-auto w-full space-y-8 my-auto">
+        
+        <div class="p-3 sm:p-8 flex flex-col justify-center bg-neutral">
+            <div class="space-y-3">
+                <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-1.5 py-1 rounded">04</span>
+                <h2 class="font-serif-custom text-2xl text-center font-bold text-neutral-600 tracking-tight">Ritual rahasia, ramalan, dan tuduhan black mass</h2>
+
+                <img src="{{ asset('dist/images/historical/4.jpg') }}" alt="Sky Series" class="w-full h-72 sm:h-72 object-cover">
+
+                <p class="text-sm leading-relaxed text-neutral-600 py-3" style="text-align: justify;">
+                    Di antara kesaksian yang muncul dalam penyelidikan, terdapat cerita tentang ritual yang disebut black mass, ramalan, dan upacara yang dianggap melanggar ajaran agama.
+                    Dalam Eropa abad ke-17, tuduhan semacam ini memiliki daya hancur yang luar biasa. Seseorang yang dituduh melakukan sihir bukan hanya berisiko kehilangan reputasi, tetapi juga menghadapi hukuman berat.
+                    La Voisin dan sejumlah orang yang dikaitkan dengannya dituduh terlibat dalam praktik yang melampaui ramalan biasa. Kesaksian mereka memuat cerita tentang upacara rahasia, dugaan pengorbanan manusia, serta upaya memperoleh kekayaan atau pengaruh melalui praktik terlarang.
+                    Namun, ada satu hal yang penting untuk dipahami: catatan bahwa seseorang membuat tuduhan tidak sama dengan bukti bahwa peristiwa yang dituduhkan benar-benar terjadi.
+                    Sejarawan harus membedakan antara fakta bahwa penyelidikan berlangsung, bukti tentang penjualan racun, pengakuan para tersangka, dan kisah ritual yang mungkin dibesar-besarkan.
+                    Mengapa kisah-kisah semacam itu tetap menjadi bagian penting dari skandal ini?
+                    Karena orang-orang yang diperiksa memiliki kepentingan untuk menyelamatkan diri. Menyebut nama pelanggan atau tokoh yang lebih berkuasa dapat menjadi cara untuk mengalihkan perhatian, mencari perlindungan, atau membuat penyidik percaya bahwa mereka memiliki informasi berharga.
+                    Akibatnya, penyelidikan yang awalnya berfokus pada kejahatan tertentu berkembang menjadi pusaran rumor yang melibatkan masyarakat luas.
+                </p>
+            </div>
+        </div>
+        
+
+    </main>
+
+    <!-- Footer / Bagian Bawah -->
+    <footer class="mt-12 text-center pb-4">
+        <p class="text-sm tracking-wide text-neutral-600 flex items-center justify-center space-x-2">
+            <span>Archive by</span> 
+            <span class="handwriting text-xl font-bold text-blue-800 ml-1">bluetify</span>
+        </p>
+    </footer>
+
+</body>
+</html>

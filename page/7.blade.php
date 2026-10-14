@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Affair of the Poisons</title>
+    <!-- Tailwind CSS untuk styling modern dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Inter dan Playfair Display untuk sentuhan estetik -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f0eb; /* Warna latar krem muda sesuai gambar */
+            color: #4a4a4a;
+        }
+        .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Style untuk teks sambung bergaya tulisan tangan */
+        .handwriting {
+            font-family: 'Playfair Display', cursive;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between py-10 px-4 sm:px-8">
+
+    <!-- Container Utama -->
+    <main class="max-w-4xl mx-auto w-full space-y-8 my-auto">
+        
+        <div class="p-3 sm:p-8 flex flex-col justify-center bg-neutral">
+            <div class="space-y-3">
+                <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-1.5 py-1 rounded">07</span>
+                <h2 class="font-serif-custom text-2xl text-center font-bold text-neutral-600 tracking-tight">Ketika pengadilan mulai mengancam istana sendiri</h2>
+
+                <img src="{{ asset('dist/images/historical/7.jpg') }}" alt="Sky Series" class="w-full h-72 sm:h-72 object-cover">
+
+                <p class="text-sm leading-relaxed text-neutral-600 py-3" style="text-align: justify;">
+                    Pengadilan Chambre ardente memeriksa ratusan orang selama penyelidikan yang berlangsung dari 1679 hingga 1682. Menurut catatan Kementerian Kehakiman Prancis, 442 orang diperiksa sebagai terdakwa, 367 surat perintah penangkapan dikeluarkan, dan 218 penangkapan dipertahankan. Angka-angka ini menggambarkan betapa luasnya penyelidikan tersebut. 
+                    Ministère de la justice
+                    Namun, semakin banyak nama disebut, semakin sulit memisahkan bukti dari tuduhan.
+                    Sejumlah tokoh elite terseret ke dalam perkara. Salah satunya adalah François-Henri de Montmorency, Adipati Luxembourg, seorang panglima militer terkenal. Ia ditahan selama sekitar 14 bulan setelah dituduh terlibat dalam jaringan tersebut, tetapi tuduhan terhadap para bangsawan tidak semuanya terbukti.
+                    Persoalannya bukan lagi hanya siapa yang bersalah.
+                    Pengadilan juga berhadapan dengan konflik kepentingan politik. Orang-orang berpengaruh memiliki sekutu dan musuh di pemerintahan. Tuduhan yang muncul dalam penyelidikan dapat digunakan untuk menghancurkan reputasi pesaing.
+                    Louis XIV harus menghadapi kenyataan bahwa penyelidikan yang dimaksudkan untuk melindungi kerajaan justru berpotensi mengguncang fondasi kekuasaannya.
+                </p>
+                <p class="font-bold text-sm leading-relaxed text-neutral-600" style="text-align: justify;">Keputusan raja</p>
+                <p class="text-sm leading-relaxed text-neutral-600 py-3" style="text-align: justify;">                 
+                    Pada 1682, Louis XIV menghentikan kegiatan Chambre ardente. Sejumlah terdakwa menerima hukuman berat, sementara beberapa orang yang memiliki informasi sensitif tetap ditahan atau dikirim ke penjara kerajaan.
+                    Ini bukan berarti semua pertanyaan telah terjawab. Penghentian penyelidikan juga tidak membuktikan bahwa setiap tuduhan terhadap kalangan elite benar.
+                    Yang jelas, kerajaan tidak lagi ingin perkara itu terus berkembang tanpa kendali.
+                    Dan masih ada satu bab terakhir.
+                </p>
+            </div>
+        </div>
+        
+
+    </main>
+
+    <!-- Footer / Bagian Bawah -->
+    <footer class="mt-12 text-center pb-4">
+        <p class="text-sm tracking-wide text-neutral-600 flex items-center justify-center space-x-2">
+            <span>Archive by</span> 
+            <span class="handwriting text-xl font-bold text-blue-800 ml-1">bluetify</span>
+        </p>
+    </footer>
+
+</body>
+</html>

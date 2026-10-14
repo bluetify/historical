@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Affair of the Poisons</title>
+    <!-- Tailwind CSS untuk styling modern dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Inter dan Playfair Display untuk sentuhan estetik -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f0eb; /* Warna latar krem muda sesuai gambar */
+            color: #4a4a4a;
+        }
+        .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Style untuk teks sambung bergaya tulisan tangan */
+        .handwriting {
+            font-family: 'Playfair Display', cursive;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between py-10 px-4 sm:px-8">
+
+    <!-- Container Utama -->
+    <main class="max-w-4xl mx-auto w-full space-y-8 my-auto">
+        
+        <div class="p-3 sm:p-8 flex flex-col justify-center bg-neutral">
+            <div class="space-y-3">
+                <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-1.5 py-1 rounded">02</span>
+                <h2 class="font-serif-custom text-2xl text-center font-bold text-neutral-600 tracking-tight">Pengkhianatan di balik pintu istana</h2>
+
+                <img src="{{ asset('dist/images/historical/2.jpg') }}" alt="Sky Series" class="w-full h-48 sm:h-52 object-cover">
+
+                <p class="text-sm leading-relaxed text-neutral-600 py-3" style="text-align: justify;">
+                    Pada masa Louis XIV, kehidupan istana Versailles adalah panggung tempat orang-orang bersaing mendapatkan kedudukan.
+                    Raja memiliki kekuasaan yang luar biasa. Perhatian darinya dapat meningkatkan pengaruh seseorang, sedangkan hilangnya kepercayaan raja dapat menghancurkan karier seorang bangsawan.
+                    Karena itu, ketakutan dan kecemburuan bukanlah sekadar persoalan pribadi. Keduanya dapat berubah menjadi persoalan politik.
+                    Ketika jaringan penjual racun diselidiki, muncul nama-nama bangsawan yang konon pernah berhubungan dengan para peramal atau praktisi ilmu gaib. Sebagian menghadapi pemeriksaan; sebagian lainnya hanya disebut dalam kesaksian yang belum tentu dapat dipercaya.
+                    Penyelidikan ini akhirnya menjadi urusan negara.
+                    Pada 7 April 1679, Louis XIV membentuk pengadilan khusus bernama Chambre ardente untuk menangani perkara-perkara yang berkaitan dengan racun dan tuduhan ilmu gaib. Pengadilan tersebut bersidang di kompleks Arsenal, Paris.
+                    Nama Chambre ardente secara harfiah berarti kurang lebih “ruang yang menyala”. Pengadilan itu dikenal melalui gambaran ruang sidang yang gelap, diterangi obor dan lilin, dengan pemeriksaan tertutup yang sangat serius.
+                    Kini, penyelidikan bukan hanya tentang siapa yang menjual racun.
+                    Pertanyaannya berubah menjadi: siapa saja yang menggunakan jasa mereka, dan apakah ada orang yang berencana melakukan kejahatan terhadap orang-orang paling berkuasa di Prancis?
+                </p>
+            </div>
+        </div>
+        
+
+    </main>
+
+    <!-- Footer / Bagian Bawah -->
+    <footer class="mt-12 text-center pb-4">
+        <p class="text-sm tracking-wide text-neutral-600 flex items-center justify-center space-x-2">
+            <span>Archive by</span> 
+            <span class="handwriting text-xl font-bold text-blue-800 ml-1">bluetify</span>
+        </p>
+    </footer>
+
+</body>
+</html>

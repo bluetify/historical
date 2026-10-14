@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Affair of the Poisons</title>
+    <!-- Tailwind CSS untuk styling modern dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Inter dan Playfair Display untuk sentuhan estetik -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f0eb; /* Warna latar krem muda sesuai gambar */
+            color: #4a4a4a;
+        }
+        .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Style untuk teks sambung bergaya tulisan tangan */
+        .handwriting {
+            font-family: 'Playfair Display', cursive;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between py-10 px-4 sm:px-8">
+
+    <!-- Container Utama -->
+    <main class="max-w-4xl mx-auto w-full space-y-8 my-auto">
+        
+        <div class="p-3 sm:p-8 flex flex-col justify-center bg-neutral">
+            <div class="space-y-3">
+                <span class="text-xs font-semibold tracking-wider uppercase bg-[#d9d6d0] text-neutral-700 px-1.5 py-1 rounded">05</span>
+                <h2 class="font-serif-custom text-2xl text-center font-bold text-neutral-600 tracking-tight">Madame de Montespan: nama yang paling berbahaya untuk disebut</h2>
+
+                <img src="{{ asset('dist/images/historical/5.jpg') }}" alt="Sky Series" class="w-full h-full sm:h-100 object-cover">
+
+                <p class="text-sm leading-relaxed text-neutral-600 py-3" style="text-align: justify;">
+                    Di sinilah skandal tersebut mencapai bagian yang paling sensitif.
+                    Françoise-Athénaïs de Rochechouart de Mortemart, yang dikenal sebagai Madame de Montespan, adalah salah satu perempuan paling berpengaruh dalam kehidupan pribadi Louis XIV. Ia merupakan kekasih raja dan ibu dari beberapa anak mereka.
+                    Montespan bukan perempuan biasa yang kebetulan berada di dekat pusat kekuasaan. Hubungannya dengan raja memberinya posisi penting di lingkungan istana.
+                    Ketika namanya mulai dikaitkan dengan La Voisin, perkara ini berubah menjadi ancaman bagi reputasi kerajaan.
+                </p>
+                <p class="font-bold text-sm leading-relaxed text-neutral-600" style="text-align: justify;">Apa yang sebenarnya dituduhkan?</p>
+                <p class="text-sm leading-relaxed text-neutral-600 py-3" style="text-align: justify;">                 
+                    Dalam kesaksian yang muncul selama skandal, Montespan dikaitkan dengan konsultasi mengenai ramalan dan ramuan cinta. Tuduhan yang lebih serius juga beredar, termasuk dugaan penggunaan ritual untuk mempertahankan kasih sayang raja atau menyingkirkan pesaing romantis.
+                    Namun, tingkat kepastian setiap tuduhan berbeda-beda.
+                    Hubungan Montespan dengan dunia ramalan dan praktik yang dikaitkan dengan La Voisin menjadi bagian dari kontroversi sejarah. Akan tetapi, tidak ada pembuktian meyakinkan bahwa Montespan terlibat dalam persekongkolan pembunuhan terhadap Louis XIV. Tuduhan mengenai keterlibatannya dalam ritual tertentu juga tidak boleh diperlakukan sebagai fakta yang sudah terbukti.
+                </p>
+                <p class="font-bold text-sm leading-relaxed text-neutral-600" style="text-align: justify;">Mengapa hal ini mengancam seluruh kerajaan?</p>
+                <p class="text-sm leading-relaxed text-neutral-600 py-3" style="text-align: justify;">
+                Bayangkan jika pengadilan mengumumkan bahwa seorang perempuan yang sangat dekat dengan raja diduga menggunakan jasa penjual racun dan ritual terlarang.
+                Pertanyaan tidak akan berhenti pada perempuan itu sendiri.
+                Orang-orang akan bertanya apakah raja mengetahui sesuatu. Apakah pejabat kerajaan pernah menutup mata? Apakah orang-orang di sekitar raja saling mengawasi dan mencurigai satu sama lain?
+                Skandal tersebut berpotensi merusak citra Louis XIV sebagai penguasa yang memegang kendali atas istananya.
+                Dan raja tidak mungkin membiarkan perkara itu berkembang tanpa batas.
+                </p>
+            </div>
+        </div>
+        
+
+    </main>
+
+    <!-- Footer / Bagian Bawah -->
+    <footer class="mt-12 text-center pb-4">
+        <p class="text-sm tracking-wide text-neutral-600 flex items-center justify-center space-x-2">
+            <span>Archive by</span> 
+            <span class="handwriting text-xl font-bold text-blue-800 ml-1">bluetify</span>
+        </p>
+    </footer>
+
+</body>
+</html>
